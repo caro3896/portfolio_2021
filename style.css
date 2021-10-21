@@ -1,0 +1,175 @@
+body,
+html {
+  margin: 0;
+  background-color: rgb(245, 242, 237);
+}
+
+.scroller {
+  height: 100vh;
+}
+
+/* Splash */
+.splash {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #c4bdb3;
+}
+
+.text {
+  color: #fff;
+}
+
+/* Projects */
+.portfolio {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+}
+
+.text-wrap {
+  position: relative;
+  overflow: hidden;
+  width: 400px;
+  height: 80vh;
+}
+
+.panel-text {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-align: center;
+  color: #1a1a19;
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.p-wrap {
+  position: relative;
+  overflow: hidden;
+  width: 450px;
+  height: 80vh;
+}
+
+.panel {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-image: url("liiro.png");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.panel.kyoto {
+  z-index: auto;
+  background-image: url("kyoto_mockup.png");
+}
+
+.panel.bike {
+  z-index: auto;
+  background-color: red;
+  background-image: none;
+}
+
+.panel.app {
+  z-index: auto;
+  background-color: #cf5d00;
+  background-image: none;
+}
+
+.panel.rejseuglen {
+  z-index: auto;
+  background-color: white;
+  background-image: url("logo.png");
+  background-size: contain;
+  background-repeat: none;
+}
+
+.panel.hogwarts {
+  z-index: auto;
+  background-image: url("hogwarts_mockup.png");
+}
+
+/* Footer */
+.footer {
+  background-color: #1a1a19;
+  color: white;
+  padding: 3vw;
+}
+
+/* ANIMATION */
+
+#caroline_text {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@media (min-width: 800px) {
+  .panel-text {
+    font-size: 40px;
+  }
+
+  .p-wrap {
+    width: 650px;
+  }
+
+  .text-wrap {
+    width: 900px;
+  }
+
+  .footer {
+    display: flex;
+    padding-top: 1vw;
+  }
+
+  .footer div {
+    margin-right: 60px;
+  }
+
+  /* Portfolio headlines */
+
+  /* .panel-text.blue-text {
+  color: blue;
+}
+
+.panel-text.red-text {
+  color: red;
+}
+
+.panel-text.purple-text {
+  color: purple;
+}
+
+.panel-text.orange-text {
+  color: orange;
+} */
+
+  /* Portfolio images */
+
+  /* .panel._2 {
+    z-index: 1;
+    background-image: url("../images/5f5a5b3515c4dd0c2c455925_110642301_938622823267359_7859124022958180678_n201.jpg");
+  } */
+}
