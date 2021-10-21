@@ -1,7 +1,24 @@
+/* General */
 body,
 html {
   margin: 0;
-  background-color: rgb(245, 242, 237);
+  background-color: rgb(255, 255, 255);
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+}
+
+h2{
+  font-family: 'Playfair Display', serif;
+}
+
+h3{
+  font-family: 'Playfair Display', serif;
+}
+
+p{
+  font-family: 'Avenir Next', sans-serif;
 }
 
 .scroller {
@@ -88,8 +105,7 @@ html {
 
 .panel.app {
   z-index: auto;
-  background-color: #cf5d00;
-  background-image: none;
+  background-image: url("jumo_mockup.png");
 }
 
 .panel.rejseuglen {
@@ -128,15 +144,15 @@ html {
 
 @media (min-width: 800px) {
   .panel-text {
-    font-size: 40px;
+    font-size: 20px;
   }
 
   .p-wrap {
-    width: 650px;
+    width: 750px;
   }
 
   .text-wrap {
-    width: 900px;
+    width: 800px;
   }
 
   .footer {
@@ -145,8 +161,8 @@ html {
   }
 
   .footer div {
-    margin-right: 60px;
-  }
+    margin-right: 100px;
+    margin-left: 20px;
 
   /* Portfolio headlines */
 
