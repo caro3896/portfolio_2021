@@ -3,6 +3,8 @@ body,
 html {
   margin: 0;
   background-color: rgb(255, 255, 255);
+  background-image: url("baggrund.svg");
+  background-size: cover;
 }
 
 h1 {
@@ -27,16 +29,69 @@ p{
 
 /* Splash */
 .splash {
-  display: flex;
   height: 100vh;
-  justify-content: center;
-  align-items: center;
-  background-color: #c4bdb3;
 }
 
-.text {
-  color: #fff;
+#profile_picture {
+  width: 75vw;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 10px 10px 80px -16px rgba(0,0,0,0.75);
 }
+
+#caroline{
+  z-index: 2;
+  position: relative;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: white;
+}
+
+.mask{
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+}
+
+@keyframes strokeOffset {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+#c_mask{
+  animation: strokeOffset 1s linear forwards;
+}
+
+#a_mask {
+  animation: strokeOffset 1s linear forwards 0.3s;
+}
+#r_mask {
+  animation: strokeOffset 1s linear forwards 0.6s;
+} 
+#o_mask {
+  animation: strokeOffset 1s linear forwards 0.9s;
+} 
+#l_mask {
+  animation: strokeOffset 1s linear forwards 1.2s;
+} 
+#i_mask {
+  animation: strokeOffset 1s linear forwards 1.5s;
+} 
+#n_mask {
+  animation: strokeOffset 1s linear forwards 1.8s;
+} 
+#e_mask {
+  animation: strokeOffset 1s linear forwards 2.1s;
+} 
+#dot_mask {
+  animation: strokeOffset 1s linear forwards 2.4s;
+} 
 
 /* Projects */
 .portfolio {
@@ -123,7 +178,7 @@ p{
 
 /* Footer */
 .footer {
-  background-color: #1a1a19;
+  background-color: #b5aa9b;
   color: white;
   padding: 3vw;
 }
@@ -142,7 +197,22 @@ p{
   }
 }
 
+/* DESKTOP */
 @media (min-width: 800px) {
+  /* Splash */
+  #profile_picture {
+    width: 40vw;
+  }
+  
+  #caroline{
+    top: 85%;
+    max-width: 80%;
+  }
+
+  .panel {
+    cursor: pointer;
+  }
+
   .panel-text {
     font-size: 20px;
   }
@@ -153,6 +223,15 @@ p{
 
   .text-wrap {
     width: 800px;
+  }
+
+  .panel-text h1 {
+    cursor: pointer;
+  }
+
+  .panel-text h1:hover{
+    transition: 0.2s ease-in-out;
+    transform: scale(1.1);
   }
 
   .footer {
