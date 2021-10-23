@@ -273,14 +273,9 @@ button a {
     max-width: 500px;
   }
 
-  #buttons {
-    justify-content: space-between;
-    width: 350px;
-    margin-top: 20px;
-  }
-
-  button {
-    margin: 0;
+  .arrow {
+    font-size: 25px;
+    text-align: center;
   }
 
   .panel {
