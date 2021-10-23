@@ -5,26 +5,40 @@ html {
   background-color: rgb(255, 255, 255);
   background-image: url("baggrund.svg");
   background-size: cover;
+  /* height: 100%;
+  overflow: hidden;
+  overflow-y: scroll; */
 }
 
 h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
-h2{
-  font-family: 'Playfair Display', serif;
+h2 {
+  font-family: "Playfair Display", serif;
 }
 
-h3{
-  font-family: 'Playfair Display', serif;
+h3 {
+  font-family: "Playfair Display", serif;
 }
 
-p{
-  font-family: 'Avenir Next', sans-serif;
+p {
+  font-family: "Avenir Next", sans-serif;
+}
+
+a {
+  font-family: "Avenir Next", sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .scroller {
   height: 100vh;
+  /* pointer-events: none; */
 }
 
 /* Splash */
@@ -39,10 +53,10 @@ p{
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  box-shadow: 10px 10px 80px -16px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 80px -16px rgba(0, 0, 0, 0.75);
 }
 
-#caroline{
+#caroline {
   z-index: 2;
   position: relative;
   top: 55%;
@@ -50,6 +64,7 @@ p{
   transform: translate(-50%, -50%);
   fill: white;
   width: 150%;
+  pointer-events: none;
 }
 
 #intro {
@@ -60,9 +75,8 @@ p{
   position: absolute;
 }
 
-#buttons {
-  display: flex;
-  justify-content: center;
+.arrow {
+  font-size: 20px;
 }
 
 button {
@@ -71,12 +85,16 @@ button {
   border: 1px solid black;
   border-radius: 10px;
   box-sizing: border-box;
-  color: #00132C;
+  color: #00132c;
   padding: 16px 23px;
-  box-shadow: 10px -10px 0px 0px rgba(201,192,177,1);
+  box-shadow: 10px -10px 0px 0px rgba(201, 192, 177, 1);
 }
 
-.mask{
+button a {
+  color: black;
+}
+
+.mask {
   fill: none;
   stroke: #fff;
   stroke-dasharray: 1000;
@@ -89,7 +107,7 @@ button {
   }
 }
 
-#c_mask{
+#c_mask {
   animation: strokeOffset 1s linear forwards;
 }
 
@@ -98,25 +116,25 @@ button {
 }
 #r_mask {
   animation: strokeOffset 1s linear forwards 0.6s;
-} 
+}
 #o_mask {
   animation: strokeOffset 1s linear forwards 0.9s;
-} 
+}
 #l_mask {
   animation: strokeOffset 1s linear forwards 1.2s;
-} 
+}
 #i_mask {
   animation: strokeOffset 1s linear forwards 1.5s;
-} 
+}
 #n_mask {
   animation: strokeOffset 1s linear forwards 1.8s;
-} 
+}
 #e_mask {
   animation: strokeOffset 1s linear forwards 2.1s;
-} 
+}
 #dot_mask {
   animation: strokeOffset 1s linear forwards 2.4s;
-} 
+}
 
 /* Projects */
 .portfolio {
@@ -149,6 +167,11 @@ button {
   transform: translateY(100%);
   opacity: 0;
 }
+
+/* .panel-text a {
+  z-index: 10;
+  position: relative;
+} */
 
 .p-wrap {
   position: relative;
@@ -209,8 +232,9 @@ button {
   padding-left: 6vw;
 }
 
-.footer div {
-  /* margin-top: 20px; */
+.footer a {
+  display: block;
+  margin-bottom: 8px;
 }
 
 /* ANIMATION */
@@ -235,8 +259,8 @@ button {
     top: 50%;
     left: 30%;
   }
-  
-  #caroline{
+
+  #caroline {
     top: 75%;
     left: 30%;
     max-width: 80%;
@@ -275,13 +299,14 @@ button {
     width: 800px;
   }
 
-  .panel-text h1 {
-    cursor: pointer;
+  .panel-text a {
+    font-family: "Playfair Display", serif;
+    color: black;
+    font-size: 1.5em;
   }
 
-  .panel-text h1:hover{
-    transition: 0.2s ease-in-out;
-    transform: scale(1.1);
+  .panel-text a:hover {
+    text-decoration: underline;
   }
 
   .footer {
@@ -293,11 +318,67 @@ button {
   .footer div {
     margin-right: 200px;
     margin-left: 20px;
+  }
+}
 
- 
+/* PAGES */
+.top {
+  height: 220px;
+}
 
+.header_img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  filter: opacity(0.6);
+  position: relative;
+  top: 0;
+  left: 0;
+}
 
+.headline {
+  position: relative;
+  top: -130px;
+  left: 40%;
+  transform: translate(-50px, -50%);
+  display: inline-block;
+  font-size: 2em;
+}
 
+.content {
+  /* height: 100vw; */
+  max-width: 1200px;
+  margin: 5vw;
+}
 
+.content img {
+  width: 100%;
+}
 
+/* DESKTOP */
+@media (min-width: 800px) {
+  .top {
+    height: 450px;
+  }
 
+  .header_img {
+    height: 400px;
+  }
+
+  .headline {
+    left: 50%;
+    top: -220px;
+  }
+
+  .content {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .image_library {
+    display: grid;
+    grid-template-columns: 3fr 2.2fr;
+    gap: 30px;
+    margin-top: 30px;
+  }
+}

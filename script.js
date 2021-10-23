@@ -2,7 +2,6 @@
 
 let bodyScrollBar = Scrollbar.init(document.body, {
   damping: 0.1,
-//   delegateTo: document,
 });
 
 ScrollTrigger.scrollerProxy(".scroller", {
@@ -82,3 +81,10 @@ ScrollTrigger.create({
     invalidateOnRefresh: true,
 
 });
+
+
+// document.querySelector("#liiro_link").addEventListener("click", clickLiiro);
+
+// function clickLiiro(){
+//   console.log("LIIRO clicked");
+// }
