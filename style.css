@@ -3,7 +3,7 @@ body,
 html {
   margin: 0;
   background-color: rgb(255, 255, 255);
-  background-image: url("baggrund.svg");
+  background-image: url("images/baggrund.svg");
   background-size: cover;
   /* height: 100%;
   overflow: hidden;
@@ -50,7 +50,7 @@ a:hover {
   width: 75vw;
   border-radius: 50%;
   position: absolute;
-  top: 40%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 10px 10px 80px -16px rgba(0, 0, 0, 0.75);
@@ -59,7 +59,7 @@ a:hover {
 #caroline {
   z-index: 2;
   position: relative;
-  top: 55%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   fill: white;
@@ -68,11 +68,10 @@ a:hover {
 }
 
 #intro {
-  top: 64%;
-  height: 200px;
-  width: 100%;
+  top: 58%;
   text-align: center;
   position: absolute;
+  margin: 2vw;
 }
 
 .arrow {
@@ -189,7 +188,7 @@ button a {
   z-index: 1;
   width: 100%;
   height: 100%;
-  background-image: url("liiro.png");
+  background-image: url("images/liiro.png");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -197,31 +196,27 @@ button a {
 
 .panel.kyoto {
   z-index: auto;
-  background-image: url("kyoto_mockup.png");
+  background-image: url("images/kyoto.png");
 }
 
 .panel.bike {
   z-index: auto;
-  background-color: red;
-  background-image: none;
+  background-image: url("images/bike.png");
 }
 
 .panel.app {
   z-index: auto;
-  background-image: url("jumo_mockup.png");
+  background-image: url("images/jumo.png");
 }
 
 .panel.rejseuglen {
   z-index: auto;
-  background-color: white;
-  background-image: url("logo.png");
-  background-size: contain;
-  background-repeat: none;
+  background-image: url("images/rejseuglen.png");ne;
 }
 
 .panel.hogwarts {
   z-index: auto;
-  background-image: url("hogwarts_mockup.png");
+  background-image: url("images/hogwarts.png");
 }
 
 /* Footer */
@@ -267,8 +262,8 @@ button a {
   }
 
   #intro {
-    top: 50%;
-    left: 60%;
+    top: 45%;
+    left: 55%;
     text-align: left;
     max-width: 500px;
   }

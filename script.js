@@ -88,3 +88,19 @@ ScrollTrigger.create({
 // function clickLiiro(){
 //   console.log("LIIRO clicked");
 // }
+
+const properties = {
+  duration: 800,
+  iterations: Infinity,
+  direction: "alternate",
+  easing: "ease-out",
+};
+
+const keyframes = [{ transform: `translate(0, 1vw)` }, { tranform: `transform: translate(0,0)` }];
+
+const arrow = document.querySelector(".arrow");
+const animation = arrow.animate(keyframes, properties);
+
+// arrow.addEventListener("click", () => {
+//   gsap.to(window, { duration: 1, scrollTo: "#portfolio_projects" });
+// });
