@@ -74,7 +74,7 @@ ScrollTrigger.create({
     trigger: "section.portfolio",
     scroller: ".scroller",
     scrub: true,
-    markers: true,
+    markers: false,
     pin: true,
     start: () => "top top",
     end: () => "+=" + ((images.length + 1) * window.innerHeight),
