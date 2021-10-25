@@ -49,6 +49,7 @@ a:hover {
 /* Splash */
 .splash {
   height: 100vh;
+  overflow-x: hidden;
 }
 
 #profile_picture {
@@ -83,7 +84,7 @@ a:hover {
   font-size: 20px;
 }
 
-button {
+/* button {
   margin: 6px;
   background-color: #eae8e6;
   border: 1px solid black;
@@ -96,7 +97,7 @@ button {
 
 button a {
   color: black;
-}
+} */
 
 .mask {
   fill: none;
@@ -142,7 +143,6 @@ button a {
 
 /* Projects */
 .portfolio {
-  display: flex;
   height: 100vh;
   align-items: center;
 }
@@ -151,7 +151,7 @@ button a {
   position: relative;
   overflow: hidden;
   width: 400px;
-  height: 80vh;
+  height: 45vh;
 }
 
 .panel-text {
@@ -173,6 +173,19 @@ button a {
   pointer-events: none;
 }
 
+.panel-text a {
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: black;
+  z-index: 20;
+  font-size: 1.5em;
+}
+
+.panel-text a:hover {
+  text-decoration: underline;
+}
+
 /* .panel-text a {
   z-index: 10;
   position: relative;
@@ -181,8 +194,8 @@ button a {
 .p-wrap {
   position: relative;
   overflow: hidden;
-  width: 450px;
-  height: 80vh;
+  /* width: 450px; */
+  height: 50vh;
 }
 
 .panel {
@@ -279,6 +292,10 @@ button a {
     text-align: center;
   }
 
+  .portfolio {
+    display: flex;
+  }
+
   .panel {
     cursor: pointer;
   }
@@ -289,24 +306,15 @@ button a {
 
   .p-wrap {
     width: 750px;
+    height: 80vh;
   }
 
   .text-wrap {
     width: 800px;
+    height: 80vh;
   }
 
-  .panel-text a {
-    font-family: "Montserrat", serif;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: black;
-    z-index: 20;
-    font-size: 1.5em;
-  }
-
-  .panel-text a:hover {
-    text-decoration: underline;
-  }
+  
 
   .footer {
     display: flex;
