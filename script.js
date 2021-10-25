@@ -6,7 +6,6 @@ function start(){
     console.log("DOM is loaded");
     addArrowAnimation();
     addScrollAnimation();
-    addEventListeners();
 }
 
 function addArrowAnimation(){
@@ -76,7 +75,7 @@ function addScrollAnimation(){
       });
 
       //Sets the z-index on the text-panel
-      gsap.set(".panel-text", { zIndex: (i, target, targets) => targets.length - i });
+      // gsap.set(".panel-text", { zIndex: (i, target, targets) => targets.length - i });
 
       //Makes array with the text
       var texts = gsap.utils.toArray('.panel-text');
@@ -118,9 +117,5 @@ function addScrollAnimation(){
         invalidateOnRefresh: true,
     
     });
-
-}
-
-function addEventListeners(){
 
 }

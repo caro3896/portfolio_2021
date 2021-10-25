@@ -150,7 +150,6 @@ button a {
 .text-wrap {
   position: relative;
   overflow: hidden;
-  width: 400px;
   height: 45vh;
 }
 
@@ -170,7 +169,6 @@ button a {
   color: #1a1a19;
   transform: translateY(100%);
   opacity: 0;
-  pointer-events: none;
 }
 
 .panel-text a {
@@ -331,6 +329,7 @@ button a {
 /* PAGES */
 .top {
   height: 220px;
+  overflow-x: hidden;
 }
 
 .header_img {
