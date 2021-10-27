@@ -81,7 +81,7 @@ a:hover {
   font-size: 20px;
 }
 
-/* button {
+button {
   margin: 6px;
   background-color: #eae8e6;
   border: 1px solid black;
@@ -94,7 +94,7 @@ a:hover {
 
 button a {
   color: black;
-} */
+}
 
 .mask {
   fill: none;
