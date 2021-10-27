@@ -1,3 +1,4 @@
+/* ------------ FRONTPAGE ------------ */
 /* General */
 body,
 html {
@@ -310,6 +311,8 @@ button a {
   }
 }
 
+/* ------------ SINGLE PAGES ------------ */
+
 .header_img {
   width: 100%;
   height: 200px;
@@ -373,7 +376,7 @@ right: 0;
   }
 
   .logo:hover {
-    text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);
+    text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.4), 0px -5px 35px rgba(149, 145, 145, 0.51);
     text-decoration: none;
   }
 
@@ -393,3 +396,74 @@ right: 0;
     margin-top: 30px;
   }
 }
+
+
+/* ------------ ABOUT ------------ */
+
+.about_top {
+  overflow-x: hidden;
+  height: 300px;
+}
+
+#mini_profile_picture {
+  width: 40vw;
+  border-radius: 50%;
+  position: absolute;
+  top: 22%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  box-shadow: 10px 10px 80px -16px rgba(0, 0, 0, 0.75);
+}
+
+#mini_caroline {
+  z-index: 2;
+  position: relative;
+  top: 5%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  fill: white;
+  width: 110%;
+  pointer-events: none;
+}
+
+#about_me {
+  margin: 5vw;
+}
+
+#about_me h2{
+  background-color: #b5aa9b;
+}
+
+#about_me li {
+  font-family: "Avenir Next", sans-serif;
+  line-height: 25px;
+  list-style-type: circle;
+}
+
+/* DESKTOP */
+@media (min-width: 800px) {
+
+  .about_top {
+    height: 600px;
+    overflow-x: visible;
+  }
+  #mini_profile_picture {
+    width: 20vw;
+    top: 40%;
+  }
+
+  #mini_caroline {
+    width: 60%;
+    left: 47%;
+  }
+
+  #about_me {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 5vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+  }
+}
+
