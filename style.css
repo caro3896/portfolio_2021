@@ -441,6 +441,8 @@ right: 0;
 
 #about_me h2{
   background-color: #b5aa9b;
+  padding: 5px;
+  padding-left: 10px;
 }
 
 #about_me li {
