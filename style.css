@@ -235,9 +235,18 @@ button a {
   padding-left: 6vw;
 }
 
-.footer a {
-  display: block;
-  margin-bottom: 8px;
+.footer ul {
+  padding: 0;
+}
+
+.footer li {
+  list-style-type: none;
+  line-height: 35px;
+}
+
+.icon img {
+  width: 50px;
+  margin-right: 20px;
 }
 
 /* ANIMATION */
