@@ -5,9 +5,6 @@ html {
   background-color: rgb(255, 255, 255);
   background-image: url("images/baggrund.svg");
   background-size: cover;
-  /* height: 100%;
-  overflow: hidden;
-  overflow-y: scroll; */
 }
 
 h1 {
@@ -43,7 +40,6 @@ a:hover {
 
 .scroller {
   height: 100vh;
-  /* pointer-events: none; */
 }
 
 /* Splash */
@@ -184,15 +180,9 @@ button a {
   text-decoration: underline;
 }
 
-/* .panel-text a {
-  z-index: 10;
-  position: relative;
-} */
-
 .p-wrap {
   position: relative;
   overflow: hidden;
-  /* width: 450px; */
   height: 50vh;
 }
 
@@ -294,10 +284,6 @@ button a {
     display: flex;
   }
 
-  .panel {
-    cursor: pointer;
-  }
-
   .panel-text {
     font-size: 20px;
   }
@@ -312,8 +298,6 @@ button a {
     height: 80vh;
   }
 
-  
-
   .footer {
     display: flex;
     padding-top: 1vw;
@@ -326,28 +310,38 @@ button a {
   }
 }
 
-/* PAGES */
-.top {
-  height: 220px;
-  overflow-x: hidden;
-}
-
 .header_img {
   width: 100%;
   height: 200px;
   object-fit: cover;
-  /* filter: opacity(0.6); */
   position: relative;
   top: 0;
   left: 0;
 }
 
+@font-face {
+  font-family: 'homemade_appleregular';
+  src: url('fonts/homemadeapple-regular-webfont.woff2') format('woff2'),
+       url('fonts/homemadeapple-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.logo {
+  font-family: 'homemade_appleregular';
+  font-size: 1.5em;
+  position: absolute;
+left: 10px;
+top: 5px;
+}
+
 .headline {
-  position: relative;
-  top: -130px;
-  left: 40%;
-  transform: translate(-50px, -50%);
-  display: inline-block;
+  position: absolute;
+  text-align: center;
+width: 100%;
+top: 50px;
+left: 0;
+right: 0;
   font-size: 2em;
 }
 
@@ -367,17 +361,24 @@ button a {
 
 /* DESKTOP */
 @media (min-width: 800px) {
-  .top {
-    height: 450px;
-  }
 
   .header_img {
     height: 400px;
   }
 
+  .logo {
+    font-size: 1.8em;
+    left: 20px;
+    top: 10px;
+  }
+
+  .logo:hover {
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);
+    text-decoration: none;
+  }
+
   .headline {
-    left: 50%;
-    top: -220px;
+    top: 150px;
   }
 
   .content {

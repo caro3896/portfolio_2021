@@ -74,7 +74,7 @@ function addScrollAnimation(){
         
       });
 
-      //Sets the z-index on the text-panel
+      //Sets the z-index on the text-panel - REMOVED - made text unable to click
       // gsap.set(".panel-text", { zIndex: (i, target, targets) => targets.length - i });
 
       //Makes array with the text
