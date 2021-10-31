@@ -68,6 +68,7 @@ a:hover {
   fill: white;
   width: 150%;
   pointer-events: none;
+  filter: drop-shadow( 10px 10px 10px rgba(0, 0, 0, .75));
 }
 
 #intro {
@@ -185,6 +186,7 @@ button a {
   position: relative;
   overflow: hidden;
   height: 50vh;
+  box-shadow: 10px 10px 80px -16px rgba(0, 0, 0, 0.75);
 }
 
 .panel {
@@ -342,9 +344,9 @@ button a {
 .logo {
   font-family: 'homemade_appleregular';
   font-size: 1.5em;
-  position: absolute;
-left: 10px;
-top: 5px;
+  position: fixed;
+  left: 10px;
+  top: 5px;
 }
 
 .headline {
@@ -363,12 +365,23 @@ right: 0;
 
 .content {
   /* height: 100vw; */
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 5vw;
 }
 
 .content img {
   width: 100%;
+}
+
+.read_more{
+  display: block;
+  line-height: 2em;
+  color: black;
+  text-decoration: underline;
+}
+
+.read_more:hover{
+  color: #b5aa9b;
 }
 
 /* DESKTOP */
@@ -400,7 +413,8 @@ right: 0;
 
   .image_library {
     display: grid;
-    grid-template-columns: 3fr 2.2fr;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     gap: 30px;
     margin-top: 30px;
   }
