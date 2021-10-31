@@ -27,6 +27,7 @@ h3 {
 
 p {
   font-family: "Avenir Next", sans-serif;
+  font-size: 1em;
 }
 
 a {
@@ -91,6 +92,7 @@ button {
   color: #00132c;
   padding: 16px 23px;
   box-shadow: 10px -10px 0px 0px rgba(201, 192, 177, 1);
+  font-size: 1em;
 }
 
 button a {
@@ -373,15 +375,23 @@ right: 0;
   width: 100%;
 }
 
-.read_more{
-  display: block;
-  line-height: 2em;
-  color: black;
-  text-decoration: underline;
+.info {
+  margin-top: 20px;
+  border-top: 1px solid black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 20px;
+  justify-content: center;
 }
 
-.read_more:hover{
-  color: #b5aa9b;
+.read_more{
+  margin: 15px auto;
+  width: 200px;
+}
+
+.image_library{
+  margin-top: 20px;
 }
 
 /* DESKTOP */
@@ -409,9 +419,24 @@ right: 0;
   .content {
     margin: 0 auto;
     margin-bottom: 30px;
+    margin-top: 50px;
+  }
+
+  .text{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 100px;
+  }
+
+  .info{
+    border-left: 2px solid black;
+    border-top: none;
+    margin-top: 0;
+    padding-top: 0;
   }
 
   .image_library {
+    margin-top: 80px;
     display: grid;
     grid-auto-flow: dense;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
