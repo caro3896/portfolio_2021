@@ -366,6 +366,7 @@ button a {
   position: fixed;
   left: 10px;
   top: 5px;
+  z-index: 5;
 }
 
 .headline {
@@ -408,6 +409,15 @@ right: 0;
 }
 
 .image_library{
+  margin-top: 20px;
+}
+
+.next {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2em;
+  width: 30vw;
+  margin: 0 auto;
   margin-top: 20px;
 }
 
@@ -459,6 +469,11 @@ right: 0;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     gap: 30px;
     margin-top: 30px;
+  }
+
+  .next {
+    margin-top: 40px;
+    width: 10vw;
   }
 }
 
