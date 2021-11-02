@@ -267,6 +267,23 @@ button a {
   }
 }
 
+.fade_in {
+  animation: fade_in_kf 1.5s both;
+}
+
+@keyframes fade_in_kf {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
 /* DESKTOP */
 @media (min-width: 800px) {
   /* Splash */
@@ -472,6 +489,7 @@ right: 0;
   fill: white;
   width: 110%;
   pointer-events: none;
+  filter: drop-shadow( 10px 10px 10px rgba(0, 0, 0, .75));
 }
 
 #about_me {
