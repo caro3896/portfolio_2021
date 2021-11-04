@@ -29,8 +29,7 @@ function addArrowAnimation(){
 function addScrollAnimation(){
     // Code from greensock scrolltrigger demos
 
-    // ??
-    let bodyScrollBar = Scrollbar.init(document.body, {
+    let bodyScrollBar = Scrollbar.init(document.querySelector(".scroller"), {
         damping: 0.1,
       });
       
@@ -104,7 +103,6 @@ function addScrollAnimation(){
         
       });
 
-    //   ??
       ScrollTrigger.create({
   
         trigger: "section.portfolio",
