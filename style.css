@@ -1,5 +1,9 @@
 /* ------------ FRONTPAGE ------------ */
 /* General */
+* {
+  box-sizing: border-box;
+}
+
 body,
 html {
   margin: 0;
@@ -47,7 +51,7 @@ a:hover {
 /* Splash */
 .splash {
   height: 100vh;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   position: relative;
 }
 
@@ -55,7 +59,7 @@ a:hover {
   width: 75vw;
   border-radius: 50%;
   position: absolute;
-  top: 35%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 10px 10px 80px -16px rgba(0, 0, 0, 0.75);
@@ -63,18 +67,18 @@ a:hover {
 
 #caroline {
   z-index: 2;
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  fill: white;
-  width: 150%;
-  pointer-events: none;
-  filter: drop-shadow( 10px 10px 10px rgba(0, 0, 0, .75));
+position: absolute;
+transform: translate(-50%, -50%);
+fill: white;
+pointer-events: none;
+filter: drop-shadow( 10px 10px 10px rgba(0, 0, 0, .75));
+top: 48%;
+width: 100%;
+left: 50%;
 }
 
 #intro {
-  top: 57%;
+  top: 55%;
   text-align: center;
   position: relative;
   margin: 2vw;
@@ -508,13 +512,13 @@ button a {
 #mini_caroline {
   z-index: 2;
   position: relative;
-  top: 20px;
+  top: -30px;
   left: 65%;
   transform: translate(-50%, -50%);
   fill: white;
-  width: 110%;
   pointer-events: none;
   filter: drop-shadow( 10px 10px 10px rgba(0, 0, 0, .75));
+  width: 60%;
 }
 
 #about_me {
@@ -534,6 +538,11 @@ button a {
   list-style-type: circle;
 }
 
+.resume {
+  text-align: center;
+  margin: 5vw;
+}
+
 /* DESKTOP */
 @media (min-width: 800px) {
 
@@ -548,15 +557,16 @@ button a {
   }
 
   #mini_caroline {
-    width: 60%;
-    left: 55%;
+    width: 30%;
+    left: 53%;
+    top: -55px;
   }
 
   #about_me {
     max-width: 1000px;
     margin: 0 auto;
     margin-top: 5vw;
-    margin-bottom: 5vw;
+    margin-bottom: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 50px;
@@ -568,6 +578,10 @@ button a {
 
   #personal p {
     max-width: 1000px;
+  }
+
+  .resume {
+    margin: 2vw;
   }
 }
 
